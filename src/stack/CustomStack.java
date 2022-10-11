@@ -5,16 +5,22 @@ public class CustomStack {
     private int top;
     private String arr[];
 
-    CustomStack(int size){
+    CustomStack(int size) {
         arr = new String[size];
         capacity = size;
         top = -1;
     }
 
-    public boolean isEmpty(){
+    public boolean isEmpty() {
         return top == -1;
     }
-     public boolean isFull(){
-        return  top == capacity -1;
-     }
+
+    public boolean isFull() {
+        return top == capacity - 1;
+    }
+
+    public int size(){
+        return top + 1;
+    }
+
 }
