@@ -23,6 +23,10 @@ public class Main {
         intStack.pop();
         System.out.println("Stack elements after 2nd pop: "+ intStack);
 
+        System.out.println("Element '9' is at position " + intStack.search(9));
+
+
+
 
 
     }
