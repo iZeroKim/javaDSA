@@ -57,5 +57,12 @@ public class CustomStack {
         return "-1";
     }
 
-
+    @Override
+    public String toString() {
+        String output = "";
+        for (int i = 0; i < arr.length - 1; i++) {
+            output += arr[i];
+        }
+        return output;
+    }
 }

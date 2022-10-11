@@ -50,7 +50,7 @@ public class Main {
         myStack.push("Kim");
         myStack.push("Ann");
 
-        System.out.println(myStack);
+        System.out.println(myStack.toString());
 
 
     }
