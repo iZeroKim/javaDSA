@@ -25,6 +25,7 @@ public class Main {
 
         System.out.println("Element '9' is at position " + intStack.search(9));
 
+        System.out.println("Element at the top of the stack is: "+ intStack.peek());
 
 
 
