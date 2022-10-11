@@ -60,8 +60,8 @@ public class CustomStack {
     @Override
     public String toString() {
         String output = "";
-        for (int i = 0; i < arr.length - 1; i++) {
-            output += arr[i];
+        for (int i = 0; i <= top ; i++) {
+            output += arr[i] + " ";
         }
         return output;
     }
