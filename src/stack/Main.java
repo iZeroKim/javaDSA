@@ -1,5 +1,6 @@
 package stack;
 
+import java.util.Iterator;
 import java.util.Stack;
 
 public class Main {
@@ -26,6 +27,23 @@ public class Main {
         System.out.println("Element '9' is at position " + intStack.search(9));
 
         System.out.println("Element at the top of the stack is: "+ intStack.peek());
+
+        intStack.push(6);
+        intStack.push(2);
+
+        //Iteration
+        System.out.println("\nFOREACH() ITERATION");
+        System.out.println("Stack elements (LIFO):");
+        intStack.forEach(i ->{
+            System.out.println(i);
+        });
+
+        System.out.println("\nITERATOR() ITERATION");
+        Iterator iterator = intStack.iterator();
+
+        while(iterator.hasNext()){
+            System.out.println(iterator.next());
+        }
 
 
 
