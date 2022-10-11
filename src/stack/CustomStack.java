@@ -10,4 +10,11 @@ public class CustomStack {
         capacity = size;
         top = -1;
     }
+
+    public boolean isEmpty(){
+        return top == -1;
+    }
+     public boolean isFull(){
+        return  top == capacity -1;
+     }
 }
