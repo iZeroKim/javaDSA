@@ -6,3 +6,6 @@
   * Peek
   * Push
   * Search
+
+* The queue interface
+
