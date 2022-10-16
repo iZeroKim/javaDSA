@@ -45,12 +45,17 @@ public class Main {
             System.out.println(iterator.next());
         }
 
-        System.out.println("\n\n CUSTOM STACK");
+        System.out.println("\n\nCUSTOM STACK");
         CustomStack myStack = new CustomStack(4);
         myStack.push("Kim");
         myStack.push("Ann");
 
         System.out.println(myStack.toString());
+
+        myStack.pop();
+
+        System.out.println(myStack.toString());
+
 
 
     }

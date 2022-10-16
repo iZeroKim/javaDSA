@@ -38,7 +38,7 @@ public class CustomStack {
             System.exit(-1);
         }
         System.out.println(arr);
-        for (int i = 0; i < arr.length - 1; i++) {
+        for (int i = 0; i <= top - 1; i++) {
             arr[i] = arr[i];
         }
         System.out.println(arr);
