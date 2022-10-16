@@ -1,6 +1,7 @@
 package queue;
 
 
+import java.util.Iterator;
 import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.concurrent.BlockingQueue;
@@ -43,8 +44,13 @@ public class Main {
         blogQueue.add(blog1);
         blogQueue.add(blog2);
 
+        System.out.println("Queue traversal");
+        Iterator iterator = blogQueue.iterator();
 
-
+        while(iterator.hasNext()){
+            Blog currentBlog = ((Blog) iterator.next());
+            System.out.println(currentBlog.id + " " + currentBlog.title);
+        }
 
     }
 }
