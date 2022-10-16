@@ -1,6 +1,10 @@
 package queue;
 
 
+import java.util.PriorityQueue;
+import java.util.Queue;
+import java.util.concurrent.BlockingQueue;
+
 class Blog implements Comparable<Blog>{
     int id;
     String title, author, publisher;
@@ -31,6 +35,15 @@ public class Main {
         System.out.println("Queue Interface\n\n");
 
         System.out.println("PriorityQueue Queue implementation");
+
+        Queue<Blog> blogQueue = new PriorityQueue<Blog>();
+        Blog blog1 = new Blog(1, "See us", "Samuel", "Kimani", 2);
+        Blog blog2 = new Blog(2, "See them", "Allan", "Alex", 4);
+
+        blogQueue.add(blog1);
+        blogQueue.add(blog2);
+
+
 
 
     }
