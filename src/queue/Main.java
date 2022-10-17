@@ -4,7 +4,6 @@ package queue;
 import java.util.Iterator;
 import java.util.PriorityQueue;
 import java.util.Queue;
-import java.util.concurrent.BlockingQueue;
 
 class Blog implements Comparable<Blog>{
     int id;
