@@ -47,10 +47,21 @@ public class Main {
         System.out.println("Queue traversal");
         Iterator iterator = blogQueue.iterator();
 
+        iterate(iterator, blogQueue);
+
+        
+
+    }
+
+    /**
+     * Queue iteration function
+     * @param iterator
+     * @param blogQueue
+     */
+    private static void iterate(Iterator iterator, Queue<Blog> blogQueue) {
         while(iterator.hasNext()){
             Blog currentBlog = ((Blog) iterator.next());
             System.out.println(currentBlog.id + " " + currentBlog.title);
         }
-
     }
 }
