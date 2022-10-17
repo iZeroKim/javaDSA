@@ -8,4 +8,9 @@
   * Search
 
 * The queue interface
+  * PriorityQueue
+    * Add
+    * Remove
+    * Poll
+    * Iterator
 
