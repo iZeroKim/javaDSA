@@ -34,8 +34,7 @@ class Blog implements Comparable<Blog>{
 public class Main {
 
     /**
-            * Queue iteration function
-     * @param iterator
+     * Queue iteration function
      * @param blogQueue
      */
     private static void iterate(Queue<Blog> blogQueue) {
