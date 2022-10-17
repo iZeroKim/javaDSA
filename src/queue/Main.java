@@ -32,6 +32,19 @@ class Blog implements Comparable<Blog>{
 }
 
 public class Main {
+
+    /**
+            * Queue iteration function
+     * @param iterator
+     * @param blogQueue
+     */
+    private static void iterate(Queue<Blog> blogQueue) {
+        Iterator iterator = blogQueue.iterator();
+        while(iterator.hasNext()){
+            Blog currentBlog = ((Blog) iterator.next());
+            System.out.println(currentBlog.id + " " + currentBlog.title);
+        }
+    }
     public static void main(String[] args) {
         System.out.println("Queue Interface\n\n");
 
@@ -45,23 +58,16 @@ public class Main {
         blogQueue.add(blog2);
 
         System.out.println("Queue traversal");
-        Iterator iterator = blogQueue.iterator();
 
-        iterate(iterator, blogQueue);
 
-        
+        iterate(blogQueue);
+
+        blogQueue.poll();
+
+        System.out.println("Queue after removing element");
+        iterate( blogQueue);
 
     }
 
-    /**
-     * Queue iteration function
-     * @param iterator
-     * @param blogQueue
-     */
-    private static void iterate(Iterator iterator, Queue<Blog> blogQueue) {
-        while(iterator.hasNext()){
-            Blog currentBlog = ((Blog) iterator.next());
-            System.out.println(currentBlog.id + " " + currentBlog.title);
-        }
-    }
+
 }
